@@ -1,0 +1,16 @@
+[
+     {
+          "name": "sujay Govekar",
+          "email": "sujay@gmail.com",
+          "phone_number": "7897894569",
+          "password": "0123",
+          "course": "masters-degree"
+     },
+     {
+          "name": "Noel Soares",
+          "email": "noelsoares@gmail.com",
+          "phone_number": "9897969545",
+          "password": "123456",
+          "course": "undergraduate"
+     }
+]

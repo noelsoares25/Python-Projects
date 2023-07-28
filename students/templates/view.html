@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+<body>
+    <h1>User Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Phone Number</th>
+                <th>Course</th>
+                <th>Resume</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for rec in data_results %}
+            <tr>
+                <td>{{ rec.Name }}</td>
+                <td>{{ rec.Email }}</td>
+                <td>{{ rec.Password }}</td>
+                <td>{{ rec.Phone_Number }}</td>
+                <td>{{ rec.Course }}</td>
+                <td>
+                    <form action="{{url_for('display', pdf_id=rec.Phone_Number)}}" method="post" target="_blank">
+                    <button type="submit">View</button>
+                </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
